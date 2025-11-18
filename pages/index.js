@@ -147,7 +147,9 @@ export default function Home() {
             animation: "glow 2s ease-in-out infinite alternate",
             transition: "transform 0.3s ease",
           }}
-          onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.05)")}
+          onMouseEnter={(e) =>
+            (e.currentTarget.style.transform = "scale(1.05)")
+          }
           onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
         >
           🚴‍♀️ Clique pra ver a bike 💨
@@ -186,10 +188,14 @@ export default function Home() {
 
         @keyframes glow {
           0% {
-            box-shadow: 0 0 10px #ec4899, 0 0 20px #c084fc;
+            box-shadow:
+              0 0 10px #ec4899,
+              0 0 20px #c084fc;
           }
           100% {
-            box-shadow: 0 0 20px #f9a8d4, 0 0 40px #c084fc;
+            box-shadow:
+              0 0 20px #f9a8d4,
+              0 0 40px #c084fc;
           }
         }
       `}</style>
